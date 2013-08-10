@@ -4,6 +4,11 @@ MyFirstRailsApp::Application.routes.draw do
 
   get 'goodbye' => 'welcome#goodbye'
 
+  get 'time/now' => 'welcome#time'
+
+  get 'introduce/:name1/and/:name2' => 'introduce#bobandann'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
